@@ -16,7 +16,7 @@ public class Read {
 				+ "WHERE maths > 50 AND english < 60";
 		ResultSet rs;
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "Pa$$w0rd");
 			statement = conn.createStatement();
 		} catch (SQLException e) {
 			System.out.println("Connection failed.");
