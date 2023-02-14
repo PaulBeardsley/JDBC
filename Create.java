@@ -17,7 +17,7 @@ public class Create {
 		String newTable;
 		
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "Pa$$w0rd");
 			statement = conn.createStatement();
 		} catch (SQLException e) {
 			System.out.println("Connection 1 failed.");
@@ -32,7 +32,7 @@ public class Create {
 			e.printStackTrace();
 		}
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "Pa$$w0rd");
 			statement = conn.createStatement();
 		} catch (SQLException e) {
 			System.out.println("Connection 2 failed.");
