@@ -12,7 +12,7 @@ public class Delete {
 
 	public static void proceed() {
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/exams", "root", "Pa$$w0rd");
 			statement = conn.createStatement();
 		} catch (SQLException e) {
 			System.out.println("Connection failed.");
