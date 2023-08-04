@@ -21,7 +21,7 @@ public class Delete {
 		try {
 			statement.executeUpdate("DELETE FROM results WHERE name='Lupin'");
 		} catch (SQLException e) {
-			System.out.println("Insertion failed.");
+			System.out.println("Deletion failed.");
 			e.printStackTrace();
 		}
 	}
